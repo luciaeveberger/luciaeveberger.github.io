@@ -182,7 +182,7 @@
                   <ul id="menu">
                      <li id="main-title"> HELLO FRIEND </li>
                      <p>
-                        thanks for stopping by! My name is lucia berger &  I am currently a software developer at <strong> GE.</strong>
+                        thanks for stopping by! My name is lucia berger.</strong>
                      </p>
                      <div id="photoholder">
                         <!--
@@ -194,16 +194,16 @@
                         </div>
                      </div>
                      <p id="photo">
-                        I am passionate about creating responsive & beautiful user interface solutions, web developments & mexico.I am always looking for new projects & opportunities to learn more.  i am interested in becoming a UI | UX developer.
+                        I am passionate about creating responsive & beautiful solutions, data science & mexico.I am always looking for new projects & opportunities to learn more.
                      </p>
                      </p>
                      </p>
                      </div>
                      <div class="navigation">
-                        <li><a href="http://www.luciaberger.com/#slideh"> SELECTED WORKS </a> </li>
+                        <li><a href="/#slideh"> SELECTED WORKS </a> </li>
                         
                         </li>
-                        <li><a href="http://www.luciaberger.com/CV.pdf" target="_blank"> CV </a> </li>
+                        <li><a href="/CV.pdf" target="_blank"> CV </a> </li>
                         <li> <a href="http://mexicomexicomexique.blogspot.mx/" target="_blank"> BLOG  </a> </li>
                         <li id="box1"> <a href="https://www.linkedin.com/in/luciaberger" target="_blank"> CONTACT</li>
                         </a> 
@@ -216,8 +216,11 @@
                   <div class = "container">
                      <div class = "square" id="square">
                         <div class = "text">
-                           <p> illuminating </br> your ideas </p>
-                           <hr class="divider" style="margin-top: -10px; color:#3b7fe0;">
+                           <!--<p> illuminating </br> your ideas </p>-->
+                           <p> site upgrade</p>
+                            <p class="additions"> back soon! in the meantime, contact me <a href="mailto:lucia.berger@mail.mcgill.ca">here </a></p>
+
+                           <!--<hr class="divider" style="margin-top: -10px; color:#3b7fe0;">-->
                            </hr> 
                            <div id ="hold1">
                               <!--<a href="#slideh">
@@ -232,8 +235,8 @@
                      <source src="vid/l.webm#t=0,7" type='video/webm id="bdgvid";codecs="theora, vorbis"'> </source>
                   </video>
                </section>
-               <section class = "slide1" id = "slide1" ng-app="myApp">
-
+               <!-- temporary tag -->
+               <section class = "slide1" id = "slide1" ng-app="myApp" style="display: none;">
                   <div class="container">
                      <header class="clearfix" id="slideh">
                         <h1> <span style="color:#3b7fe0; font-size:80px;opacity:0.9"> WORK </h1>
@@ -466,31 +469,31 @@
                <script>
                   var footer = $('#footer'),
                       extra = 10; // In case you want to trigger it a bit sooner than exactly at the bottom.
-                  
+
                   footer.css({ opacity: '0', display: 'block' });
-                  
+
                   $(window).scroll(function() {
-                         
+
                      var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
                          documentHeight = $(document).height();
-                  
+
                       
                       // console.log( 'Scroll length: ' + scrolledLength + ' Document height: ' + documentHeight )
-                         
-                          
+
+
                      if( scrolledLength >= documentHeight ) {
-                         
+
                          footer
                             .addClass('bottom')
                             .stop().animate({ bottom: '0', opacity: '1' }, 300);
-                  
+
                      }
-                     else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {           
+                     else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {
                           footer
                              .removeClass('bottom')
                              .stop().animate({ bottom: '-100', opacity: '0' }, 500);
-                  
-                     } 
+
+                     }
                   });
                </script>
                <script>

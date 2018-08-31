@@ -959,11 +959,11 @@ margin:auto;
 }
 
 #footer {
-    display: none;
+    /*display: none;*/
     position: fixed;
     left: 0px;
     right: 0px;
-    bottom: -400px;
+    bottom: 0px;
     height: 400px;
     width: 100%;
     opacity:0.9;
@@ -1299,6 +1299,11 @@ color:#c1c1c1;
  
 .hideme{
   opacity:0;
+}
+.additions{
+    color:white !important;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size:15px;
 }
 
 .divider{
