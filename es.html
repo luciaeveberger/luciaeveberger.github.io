@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lucia Eve Berger</title>
+        <meta name="description" content="user interface, McGill University, economics, computer science">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <head profile="http://www.luciaberger.com">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+    
+       
+         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/component.css">
+         <link rel="stylesheet" href="css/default.css">
+         <!--JAVASCRIPT -->
+         <script type="text/javascript" script src="js/jq.js"></script>
+        <script type="text/javascript" script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" script src= "js/plugins.js"></script>
+        <script type="text/javascript" script src= "js/main.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+<script> 
+var $buoop = {c:2}; 
+function $buo_f(){ 
+ var e = document.createElement("script"); 
+ e.src = "//browser-update.org/update.js"; 
+ document.body.appendChild(e);
+};
+try {document.addEventListener("DOMContentLoaded", $buo_f,false)}
+catch(e){window.attachEvent("onload", $buo_f)}
+</script> 
+	
+     
+
+<!-- LOADER STYLE --> 
+
+<style> 
+.background{
+height:100%;
+width:100%;
+background-color:transparent;
+}
+.spinner {
+  margin: 350px auto;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+  font-size: 20px;
+  color:#fff;
+  
+}
+
+.spinner > div {
+  background-color: #3B7FE0;
+  height: 100%;
+  width: 6px;
+  opacity:0.9;
+  display: inline-block;
+  
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.spinner .rect3 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+@-webkit-keyframes stretchdelay {
+  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+  20% { -webkit-transform: scaleY(1.0) }
+}
+
+@keyframes stretchdelay {
+  0%, 40%, 100% { 
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }  20% { 
+    transform: scaleY(1.0);
+    -webkit-transform: scaleY(1.0);
+  }
+}
+
+  </style>      
+        <!--
+        <script src="js/Chart.js"></script>-->
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    
+
+       <script>$(document).ready(function(){
+
+        $('#menu-icon').click(function(){
+    $(this).toggleClass('open');
+    $('#menu,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+    $('#menu li,.submenu-toggle').removeClass('open');
+  });
+  
+  // clicking on overlay closes menu
+  $('#menu-overlay').click(function(){
+    $('*').removeClass('open');
+  });
+  
+  // add child menu toggles and parent class
+  $('#menu li').has('ul').addClass('parent').prepend('<div class="submenu-toggle">open</div>');
+  
+  // toggle child menus
+  $('.submenu-toggle').click(function(){
+    var currentToggle=$(this);
+    currentToggle.parent().toggleClass('open');
+    currentToggle.toggleClass('open');
+  });
+});
+</script>
+
+
+<script> 
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script> 
+
+<script> 
+$(document).ready(function() {
+    setTimeout(function() {
+        $('.background').fadeOut('slow', function() {
+            $('.spinner').fadeOut('slow');
+        });   
+    }, 1000);
+});
+
+</script> 
+
+
+
+
+
+    </head>
+    <!-- PAGE LOADER --> 
+    <div class = "background">
+    <div class="spinner">
+    LUCIA BERGER
+  <div class="rect1"></div>
+  <div class="rect2"></div>
+  <div class="rect3"></div>
+  <div class="rect4"></div>
+  <div class="rect5"></div>
+</div>
+</div> 
+    
+    <body>
+   <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+ 
+<section class="slide">
+<div id="menu-toggle">
+  <div id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<span style="font-size:20px; color:#3b7fe0;" id="name">
+MENU </br> <span style="font-size:15px; color:#fff;"><a href="http://www.luciaberger.com"> EN</a> | <a href="http://www.luciaberger.com/fr"> FR </a> | <a href="http://www.luciaberger.com/es"> ES </a> 
+ </span>
+</div>
+<div id="menu-overlay"></div>
+<ul id="menu">
+     <li id="main-title"> HELLO FRIEND </li>
+  <p>
+  thanks for stopping by! My name is lucia berger &  I am currently a software developer at <strong> GE.</strong>
+</p>
+  <div id="photoholder">
+  <!--
+<img src = "img/pic1.png">-->
+<div class="image-container image-container-num1">
+  <div class="image image-num1">
+    <img src="img/pic1.png" />
+  </div>
+  <div class="caption caption-num1">
+    <span class="bottom">
+    <a href="https://www.linkedin.com/in/luciaberger" target="_blank"> questions?</a>
+    </span>
+  </div>
+</div>
+</div>
+<p id="photo">
+I am passionate about creating responsive & beautiful user interface solutions, web developments & mexico.I am always looking for new projects & opportunities to learn more.  i am interested in becoming a UI | UX developer.</p> 
+</p>
+
+</p>
+
+</div>
+
+<div class="navigation">
+    <li><a href="http://www.luciaberger.com/#slideh"> SELECTED WORKS </a> </li>
+    
+    <!--<a class="selected">SELECTED WORKS</a>
+      <div id = "selected">
+      <a href="http://www.luciaberger.com/savr">
+      savr systems </a>
+      <a href="http://www.luciaberger.com/portfolio-tekdoc">
+      tekdoc solutions </a>
+      creative </div>-->
+    </li>
+
+    <li><a href="http://www.luciaberger.com/CV.pdf" target="_blank"> CV </a> </li> 
+ <li> <a href="http://mexicomexicomexique.blogspot.mx/" target="_blank"> BLOG  </a> </li>  
+   
+     <li> <a href="http://www.luciaberger.com/designcooperative"> DESIGN COOPERATIVE </a> </li> 
+    <li id="box1"> <a href="https://www.linkedin.com/in/luciaberger" target="_blank"> CONTACT</li> </a> 
+    
+  </ul>
+</div>
+</div>
+</div>
+</script>
+
+</script></div>
+<div class = "container">
+
+        <div class = "square" id="square">
+            <div class = "text"> 
+            <p> illuminating </br> your ideas </p>
+ <hr class="divider" style="margin-top: -80px; color:#3b7fe0;"> </hr> 
+     <div id ="hold1">
+ <a href="#slideh">
+ <button class="seemore">SEE MY WORK </button></a> 
+ </div>
+         
+            </div>
+            </div>
+     </div>
+
+               <video  id="bgvid" autoplay loop poster="img/full.jpg" muted preload="auto">
+                <source src="vid/l.mp4#t=0,7" muted id="bgvid" style="width: 1216px; height: 684px;"> </source>
+             <source src="vid/l.ogg#t=0,7" type='video/ogg id="bdgvid"; codecs="theora, vorbis"'> </source>
+            <source src="vid/l.webm#t=0,7" type='video/webm id="bdgvid";codecs="theora, vorbis"'> </source>
+                </video>
+
+            
+</section>
+
+
+
+
+<section class = "slide1" id = "slide1"> 
+      <div class="container"> 
+
+<header class="clearfix" id="slideh">
+        <h1> <span style="color:#3b7fe0; font-size:80px;opacity:0.9"> WORK </h1> </span>
+       <hr  class="divider" style="margin-top: 30px;"> </h1>
+      </header>
+      <div class="grid">
+          <figure class="effect-bubba">
+<a href="/savr"> 
+          <img src="img/front/im1.jpg" alt="savr"/> </a>
+          <figcaption>
+          <h2></h2>
+               <p>SAVR SYSTEMS</br>
+                 <a href="http://www.luciaberger.com/savr">
+                    <button class="seemore">SEE MORE </button></a> 
+</p>
+            
+          </figcaption>     
+        </figure>
+          <figure class="effect-bubba">
+          <img src="img/front/im21.jpg" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>TEKDOC </br>
+          <a href="http://www.luciaberger.com/tekdoc">
+          <button class="seemore"> SEE MORE  </button></a> </p>
+            
+          </figcaption>     
+        </figure>
+        <figure class="effect-bubba" id="cv" style="background-color:#EEEEEE;">
+        <figcaption>
+         <h2></h2>
+         <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
+          ABOUT.
+        </p>
+        </figurecaption>
+        </figure>
+</figure>
+        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
+        <figcaption>
+         <h2></h2>
+         <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
+          CV.
+        </p>
+        </figurecaption>
+      </figure>        
+
+<figure class="effect-bubba">
+          <img src="img/front/im3.jpg" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>DESIGN COOPERATIVE</br>
+         <a href="http://www.luciaberger.com/dco">
+          <button class="seemore">SEE MORE</button></a></p>
+          </figcaption>
+        </figure>
+<figure class="effect-bubba">
+          <img src="img/front/use.png" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>TECHNICAL WRITING</br>
+         <a href="http://www.luciaberger.com/dco">
+          <button class="seemore">SEE MORE</button></a></p>
+          </figcaption>
+        </figure>
+        <!--<figure class="effect-bubba" id ="technical">
+          <figcaption>
+            <h2></h2>
+            <p>TECHINCAL WRITING</br>
+         <a href="http://www.luciaberger.com/dco">
+          <button class="seemore">COMING SOON</button></a></p>
+          </figcaption>
+        </figure>
+        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
+        <figcaption>
+         <h2></h2>
+         
+         <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
+          CV.
+        </p>
+        </figurecaption>
+      </figure>-->
+        
+      </section>
+
+      </div>
+    </div><!-- /container -->
+     <div class = "quote">
+     <!--
+    when you're curious, you find lots of interesting things to do  -Walt Disney </div>-->
+</div>
+    </div>
+      
+
+    
+<div class = "contact" id="footer">
+
+ <div class = "quote"> Let's chat &#65516;  </div>
+ <div class = "holder">
+     <div id="box1">
+    when you're curious, you find lots of interesting things to do  -Walt Disney 
+     </div>
+
+     <div id = "box2">
+           <ul class = "footer">
+          <li> <img src="img/google-places.png" height="40"> MONTREAL </li>
+          <li> <a href="https://www.linkedin.com/in/luciaberger" target="_blank"><img src="img/linkedin.png" height="40"><span style="color:#c1c1c1;">  </span></a></li>
+          <li> <a href="mailto:lucia.berger@mail.mcgill.ca"><img src="img/em.png" height="30"> <span style="color:#c1c1c1;"> </span></a></li>
+          <ul>
+        </div>
+
+<!--
+
+ <img src="img/linkedin.png" height="30">LETS CONNECT</div>-->
+   </div>
+    
+   </div>
+   
+ </div>
+  </div>
+
+
+    
+
+</div>
+<div class = "end">
+</div>
+</section>
+</section>
+<!--
+
+</div>
+</section>
+
+       <!-- <script> 
+        $("#square").flip({
+    direction:'top'
+})
+</script> -->
+
+<script src="js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
+    </script>
+  
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53825129-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+ <script>
+
+
+        //DOM loaded 
+    $(document).ready(function(){
+  $("button").click(function(){
+  $('#change ').css('color','black');
+  });
+});
+</script>
+
+    </script>
+    <script>
+$('.img_class').on( "mouseover", function() {
+ 
+$('#hidden_div').show();
+ 
+});
+</script>
+
+<script> 
+$(function(){
+    $("#two").hover(function(){
+      $(this).find(".showMore").fadeIn();
+    }
+                    ,function(){
+                        $(this).find(".showMore").fadeOut();
+                    }
+                   );        
+});
+
+</script>
+      
+
+
+
+<script> 
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+</script> 
+
+<script>
+$(document).ready(function(){
+  $(".selected").click(function(){
+    $("#selected").toggle();
+  });
+});
+</script>
+
+<script>
+
+var footer = $('#footer'),
+    extra = 10; // In case you want to trigger it a bit sooner than exactly at the bottom.
+
+footer.css({ opacity: '0', display: 'block' });
+
+$(window).scroll(function() {
+       
+   var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
+       documentHeight = $(document).height();
+
+    
+    console.log( 'Scroll length: ' + scrolledLength + ' Document height: ' + documentHeight )
+       
+        
+   if( scrolledLength >= documentHeight ) {
+       
+       footer
+          .addClass('bottom')
+          .stop().animate({ bottom: '0', opacity: '1' }, 300);
+
+   }
+   else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {           
+        footer
+           .removeClass('bottom')
+           .stop().animate({ bottom: '-100', opacity: '0' }, 500);
+
+   } 
+});
+</script>
+
+<script>
+$(windows).resize(function(){
+        if ($(window).width() < $('.content').width()){
+            $('.container').css('position', 'static');
+        }
+        else{
+            $('.container').css('position', 'fixed');
+        }
+    });
+
+ </script>   
+ 
+
+    </body>
+</html>

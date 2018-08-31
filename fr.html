@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang = "fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Lucia Eve Berger</title>
+        <meta name="description" content="user interface, McGill University, economics, computer science">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <head profile="http://www.luciaberger.com">
+      <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <link rel="stylesheet" href="css/stylesheet.css">
+         <link rel="stylesheet" href="css/main.css">
+         <link rel="stylesheet" href="css/component.css">
+         <link rel="stylesheet" href="css/default.css">
+         <!--JAVASCRIPT -->
+         <script type="text/javascript" script src="js/jq.js"></script>
+        <script type="text/javascript" script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" script src= "js/plugins.js"></script>
+        <script type="text/javascript" script src= "js/main.js"></script>
+        <script src="js/modernizr.custom.js"></script>
+
+
+
+        <!--
+        <script src="js/Chart.js"></script>-->
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+       <script>$(document).ready(function(){
+
+        $('#menu-icon').click(function(){
+    $(this).toggleClass('open');
+    $('#menu,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
+    $('#menu li,.submenu-toggle').removeClass('open');
+  });
+
+  // clicking on overlay closes menu
+  $('#menu-overlay').click(function(){
+    $('*').removeClass('open');
+  });
+
+  // add child menu toggles and parent class
+  $('#menu li').has('ul').addClass('parent').prepend('<div class="submenu-toggle">open</div>');
+
+  // toggle child menus
+  $('.submenu-toggle').click(function(){
+    var currentToggle=$(this);
+    currentToggle.parent().toggleClass('open');
+    currentToggle.toggleClass('open');
+  });
+});
+</script>
+
+
+    </head>
+    <body>
+
+<section class="slide">
+<div id="menu-toggle">
+  <div id="menu-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<span style="font-size:20px; color:#3b7fe0;" id="name">
+MENU </br> <span style="font-size:15px; color:#fff;"><a href="http://www.luciaberger.com" id="link"> EN</a> | <a href="http://www.luciaberger.com/fr" id="link"> FR </a> 
+ </span>
+</div>
+<div id="menu-overlay"></div>
+<ul id="menu">
+     <li id="main-title"> BONJOUR! </li>
+  <p>
+  Je suis Lucia Eve Berger. En ce moment, j'étudie à Technische Universität Berlin.  </p>
+  <div id="photoholder">
+  <!--
+<img src = "img/pic1.png">-->
+<div class="image-container image-container-num1">
+  <div class="image image-num1">
+    <img src="img/pic1.png" />
+  </div>
+  <div class="caption caption-num1">
+    <span class="bottom"> questions?</span>
+  </div>
+</div>
+</div>
+<p id="photo">
+Je suis passionée par la creation de
+Solutions de Interface, développement de site webs, représentation de data et ..Mexique!</p>
+</p>
+
+</p>
+
+</div>
+
+<div class="navigation">
+    <li><a href="#slideh">PROJETS</a></li>
+<!--
+      <div id = "selected">
+      <a href="http://www.luciaberger.com/portfolio-savr-systems">
+      savr systems </a>
+      <a href="http://www.luciaberger.com/portfolio-tekdoc">
+      tekdoc solutions </a>
+      creative </p>
+    </li>
+-->
+    <li><a href="http://www.luciaberger.com/CV.pdf" target="_blank"> CV [en]</a> </li>
+ <li> <a href="http://mexicomexicomexique.blogspot.mx/" target="_blank"> BLOGUE </a> </li>
+    <li id="box1"> <a href="https://www.linkedin.com/in/luciaberger" target="_blank">  CONTACTEZ-MOI  </a> </li>
+
+  </ul>
+</div>
+</div>
+</div>
+</script>
+
+</script></div>
+<div class = "container">
+
+        <div class = "square" id="square">
+            <div class = "text">
+            <p> donnez vie <br> a vos idées </p>
+ <hr class="divider" style="margin-top: -80px; color:#3b7fe0;"> </hr>
+
+ <!--<a href="#slideh">
+ <button class="seemore-first" style="width:10%; opacity:1;letter-spacing:0.2em;">SAVOIR PLUS</a> </button>-->
+
+</a></p>
+            </div>
+            </div>
+     </div>
+
+               <video  id="bgvid" autoplay loop poster="img/full.jpg" muted preload="auto">
+                <source src="vid/l.mp4#t=0,7" muted id="bgvid" style="width: 1216px; height: 684px;"> </source>
+             <source src="vid/l.ogg#t=0,7" type='video/ogg id="bdgvid"; codecs="theora, vorbis"'>
+                </video>
+
+
+</section>
+
+
+<section class = "slide1" id = "slide1">
+      <div class="container">
+
+<header class="clearfix" id="slideh">
+        <h1> <span style="color:#3b7fe0; font-size:80px;opacity:0.9"> PROJETS </h1> </span>
+       <hr  class="divider" style="margin-top: 30px;"> </h1>
+      </header>
+      <div class="grid">
+          <figure class="effect-bubba">
+<a href="/savr">
+          <img src="img/front/im1.jpg" alt="savr"/> </a>
+          <figcaption>
+          <h2></h2>
+               <p>SAVR SYSTEMS</br>
+                 <a href="http://www.luciaberger.com/savr">
+                    <button class="seemore"> VOIR PLUS </button></a>
+</p>
+
+          </figcaption>
+        </figure>
+          <figure class="effect-bubba">
+          <img src="img/front/im21.jpg" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>TEKDOC </br>
+          <a href="http://www.luciaberger.com/tekdoc">
+          <button class="seemore"> VOIR PLUS  </button></a> </p>
+
+          </figcaption>
+        </figure>
+        <figure class="effect-bubba" id="cv" style="background-color:#EEEEEE;">
+        <figcaption>
+         <h2></h2>
+         <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
+         <a href="/apropos.html" style="color:#aaa;"> A PROPOS. </a>
+        </p>
+        </figurecaption>
+        </figure>
+</figure>
+        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
+        <figcaption>
+         <h2></h2>
+         <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
+          <a href="http://www.luciaberger.com/CV.pdf" target="_blank" style="color:#aaa"> CV. </a>
+        </p>
+        </figurecaption>
+      </figure>
+
+<figure class="effect-bubba">
+          <img src="img/front/im3.jpg" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>DESIGN COOPERATIVE</br>
+         <a href="http://www.luciaberger.com/dco">
+          <button class="seemore">VOIR PLUS</button></a></p>
+          </figcaption>
+        </figure>
+<figure class="effect-bubba">
+          <img src="img/front/use.png" alt="img06"/>
+          <figcaption>
+            <h2></h2>
+            <p>TECHNICAL WRITING</br>
+         <a href="http://www.luciaberger.com/dco">
+          <button class="seemore">BIENTOT</button></a></p>
+          </figcaption>
+        </figure>
+
+      </section>
+
+
+      </div>
+    </div><!-- /container -->
+     <div class = "quote">
+     <!--
+    when you're curious, you find lots of interesting things to do  -Walt Disney </div>-->
+</div>
+    </div>
+
+
+
+<div class = "contact" id="footer">
+
+ <div class = "quote"> CONTACTEZ-MOI &#65516;  </div>
+ <div class = "holder">
+     <div id="box1">
+    L'art est proprement une « distraction ».  -Max JACOB
+     </div>
+
+     <div id = "box2">
+               <ul class = "footer">
+          <li> <img src="img/google-places.png" height="40"> MONTREAL </li>
+          <li> <a href="https://www.linkedin.com/in/luciaberger" target="_blank"><img src="img/linkedin.png" height="40"><span style="color:#c1c1c1;"> </span></a></li>
+          <li> <a href="mailto:lucia.berger@mail.mcgill.ca"><img src="img/em.png" height="30"> <span style="color:#c1c1c1;">  </span></a></li>
+          <ul>
+        </div>
+
+<!--
+
+ <img src="img/linkedin.png" height="30">LETS CONNECT</div>-->
+   </div>
+
+   </div>
+
+ </div>
+  </div>
+
+
+
+
+</div>
+<div class = "end">
+</div>
+</section>
+</section>
+<!--
+
+</div>
+</section>
+
+       <!-- <script>
+        $("#square").flip({
+    direction:'top'
+})
+</script> -->
+
+<script src="js/grid.js"></script>
+    <script>
+      $(function() {
+        Grid.init();
+      });
+    </script>
+    </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+
+ <script>
+
+
+        //DOM loaded
+    $(document).ready(function(){
+  $("button").click(function(){
+  $('#change ').css('color','black');
+  });
+});
+</script>
+
+    </script>
+    <script>
+$('.img_class').on( "mouseover", function() {
+
+$('#hidden_div').show();
+
+});
+</script>
+
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+
+
+<script>
+$(function(){
+    $("#two").hover(function(){
+      $(this).find(".showMore").fadeIn();
+    }
+                    ,function(){
+                        $(this).find(".showMore").fadeOut();
+                    }
+                   );
+});
+
+</script>
+
+
+
+
+<script>
+$(document).ready(function() {
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},800);
+
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".selected").click(function(){
+    $("#selected").toggle();
+  });
+});
+</script>
+<script>
+
+var footer = $('#footer'),
+    extra = 10; // In case you want to trigger it a bit sooner than exactly at the bottom.
+
+footer.css({ opacity: '0', display: 'block' });
+
+$(window).scroll(function() {
+
+   var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
+       documentHeight = $(document).height();
+
+
+    console.log( 'Scroll length: ' + scrolledLength + ' Document height: ' + documentHeight )
+
+
+   if( scrolledLength >= documentHeight ) {
+
+       footer
+          .addClass('bottom')
+          .stop().animate({ bottom: '0', opacity: '1' }, 300);
+
+   }
+   else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {
+        footer
+           .removeClass('bottom')
+           .stop().animate({ bottom: '-100', opacity: '0' }, 500);
+
+   }
+});
+</script>
+
+<script>
+$(windows).resize(function(){
+        if ($(window).width() < $('.content').width()){
+            $('.container').css('position', 'static');
+        }
+        else{
+            $('.container').css('position', 'fixed');
+        }
+    });
+
+ </script>
+
+
+    </body>
+</html>
