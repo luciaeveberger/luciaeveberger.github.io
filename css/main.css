@@ -244,6 +244,11 @@ body {
 a{
     text-decoration: none;
     color:#fff;
+
+}
+.link_tag{
+    color:#3b7fe0 !important;
+    text-decoration: underline;
 }
 
 .slide{
