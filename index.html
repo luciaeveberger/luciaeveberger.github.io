@@ -31,29 +31,7 @@
                   <script type="text/javascript" src= "js/main.js"></script>
                   <script src="js/modernizr.custom.js"></script>
                   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-                  <script>$(document).ready(function(){
-                     $('#menu-icon').click(function(){
-                     $(this).toggleClass('open');
-                     $('#menu,#menu-toggle,#page-content,#menu-overlay').toggleClass('open');
-                     $('#menu li,.submenu-toggle').removeClass('open');
-                     });
-                     
-                     // clicking on overlay closes menu
-                     $('#menu-overlay').click(function(){
-                     $('*').removeClass('open');
-                     });
-                     
-                     // add child menu toggles and parent class
-                     $('#menu li').has('ul').addClass('parent').prepend('<div class="submenu-toggle">open</div>');
-                     
-                     // toggle child menus
-                     $('.submenu-toggle').click(function(){
-                     var currentToggle=$(this);
-                     currentToggle.parent().toggleClass('open');
-                     currentToggle.toggleClass('open');
-                     });
-                     });
-                  </script>
+
                   <script> 
                      $(function() {
                        $('a[href*=#]:not([href=#])').click(function() {
@@ -96,60 +74,10 @@
                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
                <![endif]-->
                <section class="slide">
-                  <div id="menu-toggle">
-                     <div id="menu-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                     </div>
-                     <span style="font-size:20px; color:#3b7fe0;" id="name">
-                     MENU </br> <span style="font-size:15px; color:#fff;"><a href="http://www.luciaberger.com" id="link"> EN</a> | <a href="http://www.luciaberger.com/fr" id="link"> FR </a> 
-                     </span>
-                  </div>
-                  <div id="menu-overlay"></div>
-                  <ul id="menu">
-                     <li id="main-title"> HELLO FRIEND </li>
-                     <p>
-                        thanks for stopping by! My name is lucia berger.</strong>
-                     </p>
-                     <div id="photoholder">
-                        <!--
-                           <img src = "img/pic1.png">-->
-                        <div class="image-container image-container-num1">
-                           <div class="image image-num1">
-                              <img src="img/pic1.png" />
-                           </div>
-                        </div>
-                     </div>
-                     <p id="photo">
-                        I am passionate about creating responsive & beautiful solutions, data science & mexico. I am always looking for new projects & opportunities to learn more.
-                     </p>
-                     </p>
-                     </p>
-                     </div>
-                     <div class="navigation">
-                        <li><a href="/#slideh"> SELECTED WORKS </a> </li>
-                        
-                        </li>
-                        <li><a href="/CV.pdf" target="_blank"> CV </a> </li>
-                        <li id="box1"> <a href="https://www.linkedin.com/in/luciaberger" target="_blank" > CONTACT</li>
-                        </a> 
-                  </ul>
-                  </div>
-                  </div>
-                  </div>
-                  </script>
-                  </script></div>
                   <div class = "container">
                      <div class = "square" id="square">
                         <div class = "text">
                            <p> illuminating </br> your ideas </p>
-                           <!--<p class="additions"> back soon! in the meantime, contact me <a class="link_tag" href="https://www.linkedin.com/in/luciaberger/">here</a> or check out my <a class="link_tag" href="/CV.pdf">CV</a>.</p>-->
-
-                           <!--<hr class="divider" style="margin-top: -10px; color:#3b7fe0;">-->
                            </hr> 
                            <div id ="hold1">
                               <a href="#slideh">
@@ -165,7 +93,7 @@
                </section>
 
                <!-- temporary tag -->
-               <section class = "slide1" id = "slide1" ng-app="myApp">
+               <section class = "slide1" id = "slide1">
                   <div class="container">
                      <header class="clearfix" id="slideh">
                         <h1> <span style="color:#3b7fe0; font-size:80px;opacity:0.9"> WORK </h1>
@@ -179,7 +107,7 @@
                            <figcaption>
                               <h2></h2>
                               <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
-                                 <a href="/pages/about.html" target="_blank" style="color:#aaa"> CV. </a>
+                                 <a href="./CV.pdf" target="_blank" style="color:#aaa"> CV. </a>
                               </p>
                            </figcaption>
                         </figure>
@@ -190,53 +118,63 @@
                               <h2></h2>
                                  <p>EUROPEAN MASTER IN SOFTWARE ENGINEERING </br>
                                  <a href="./masters.html">
-                                 <button class="seemore">SEE MORE </button></a> 
+                                 <button class="seemore">MASTERS</button></a>
                               </p>
                            </figcaption>
                         </figure>
                         <figure class="effect-bubba">
-                           <a href="./dma.html">
+                           <a href="./pages/dma.html">
                            <img src="img/front/ge_2.jpg" alt="ge"/> </a>
                            <figcaption>
                               <h2></h2>
-                              <p>DMA</br>
-                                 <a href="./dma.html">
-                                 <button class="seemore">ADVENTURES IN AI </button></a>
+                              <p>PYTHON CURRICULUM DEVELOPMENT</br>
+                                 <a href="./pages/dma.html">
+                                 <button class="seemore">AI </button></a>
                               </p>
                            </figcaption>
                         </figure>
                         <!-- second row -->
                         <figure class="effect-bubba">
-                           <img src="img/front/cansat.PNG" alt="img06"/>
+                           <a href="/savr">
+                              <img src="img/front/im3.jpg" alt="savr"/> </a>
                            <figcaption>
                               <h2></h2>
-                              <p>CANSAT </br>
-                                 <a href="">
-                                 <button class="seemore"> COMING SOON  </button></a> 
+                              <p>OPEN DATA VISUALIZATION </br>
+                                 <a href="./pages/open_data_visualization.html">
+                                    <button class="seemore"> WEB DEV </button></a>
                               </p>
                            </figcaption>
                         </figure>
                         <figure class="effect-bubba">
-                           <a href="/savr"> 
-                           <img src="img/front/im1.jpg" alt="savr"/> </a>
+                           <a href="/savr">
+                              <img src="img/front/im1.jpg" alt="savr"/> </a>
                            <figcaption>
                               <h2></h2>
-                              <p>DFKI </br>
-                                 <a href="">
-                                 <button class="seemore"> COMING SOON </button></a> 
+                              <p> APEX STARTUP COMPETITION</br>
+                                 <a href="./pages/saver_opener.html">
+                                    <button class="seemore"> WEB DEV </button></a>
                               </p>
                            </figcaption>
                         </figure>
+<!--                        <figure class="effect-bubba">-->
+<!--                           <a href="/cansat"> <img src="img/front/im1.jpg" alt="img06"/> </a>-->
+<!--                           <figcaption>-->
+<!--                              <h2></h2>-->
+<!--                              <p> APEX STATUP COMPETITION </br>-->
+<!--                                 <a href="./pages/saver_opener.html">-->
+<!--                                 <button class="seemore"> SAVR WEB DEV  </button></a>-->
+<!--                              </p>-->
+<!--                           </figcaption>-->
+<!--                        </figure>-->
+
                         <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
                            <figcaption>
                               <h2></h2>
                               <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
-                                 <a href="mailto:lucia.berger@mail.mcgill.ca?Subject=Contact" target="_top"target="_blank" style="color:#aaa"> CONTACT </a>
+                                 <a href="./pages/about.html" style="color:#aaa"> ABOUT </a>
                               </p>
                            </figcaption>
                         </figure>
-                        </figure>
-
                         <!-- third row -->
                         <!-- figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
                            <figcaption>
@@ -268,8 +206,10 @@
                               </p>
                            </figcaption>
                         </figure> -->
+
                      </div>
                   </div>
+
                </section>
                <script>
                   //DOM loaded 
