@@ -23,52 +23,32 @@
                   <link rel="stylesheet" href="css/component.css">
                   <link rel="stylesheet" href="css/default.css">
                   <!--JAVASCRIPT -->
+
                   <script type="text/javascript" script src="js/jq.js"></script>
-                  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-                  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
-                  <script type="text/javascript" src="js/app.js"> </script>
                   <script type="text/javascript" script src= "js/plugins.js"></script>
-                  <script type="text/javascript" src= "js/main.js"></script>
                   <script src="js/modernizr.custom.js"></script>
                   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-
-                  <script> 
-                     $(function() {
-                       $('a[href*=#]:not([href=#])').click(function() {
-                         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            <script>
+               function isMobile() { return ('ontouchstart' in document.documentElement); }
+               $(function() {
+                  let is_on_mobile = isMobile();
+                  if (is_on_mobile === false) {
+                     $('a[href*=#]:not([href=#])').click(function () {
+                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
                            var target = $(this.hash);
-                           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                            if (target.length) {
-                             $('html,body').animate({
-                               scrollTop: target.offset().top
-                             }, 1000);
-                             return false;
+                              $('html,body').animate({
+                                 scrollTop: target.offset().top
+                              }, 1000);
+                              return false;
                            }
-                         }
-                       });
-                     });
-                  </script> 
-                  <script> 
-                     $(document).ready(function() {
-                         setTimeout(function() {
-                             $('.background').fadeOut('slow', function() {
-                                 $('.spinner').fadeOut('slow');
-                             });   
-                         }, 1000);
-                     });
-                     
-                  </script> 
+                        }
+                     })
+                  }
+               });
+            </script>
             </head>
-            <!-- PAGE LOADER --> 
-            <div class = "background">
-               <div class="spinner">
-                  <div class="rect1"></div>
-                  <div class="rect2"></div>
-                  <div class="rect3"></div>
-                  <div class="rect4"></div>
-                  <div class="rect5"></div>
-               </div>
-            </div>
             <body>
                <!--[if lt IE 7]>
                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -92,7 +72,6 @@
                   </video>
                </section>
 
-               <!-- temporary tag -->
                <section class = "slide1" id = "slide1">
                   <div class="container">
                      <header class="clearfix" id="slideh">
@@ -228,10 +207,8 @@
                   });
                   });
                </script>
-               </script>
                <script>
                   $('.img_class').on( "mouseover", function() {
-                   
                   $('#hidden_div').show();
                    
                   });
@@ -248,79 +225,5 @@
                   });
                   
                </script>
-               <script> 
-                  $(document).ready(function() {
-                      
-                      /* Every time the window is scrolled ... */
-                      $(window).scroll( function(){
-                      
-                          /* Check the location of each desired element */
-                          $('.hideme').each( function(i){
-                              
-                              var bottom_of_object = $(this).position().top + $(this).outerHeight();
-                              var bottom_of_window = $(window).scrollTop() + $(window).height();
-                              
-                              /* If the object is completely visible in the window, fade it it */
-                              if( bottom_of_window > bottom_of_object ){
-                                  
-                                  $(this).animate({'opacity':'1'},800);
-                                      
-                              }
-                              
-                          }); 
-                      
-                      });
-                      
-                  });
-               </script> 
-               <script>
-                  $(document).ready(function(){
-                    $(".selected").click(function(){
-                      $("#selected").toggle();
-                    });
-                  });
-               </script>
-               <script>
-                  var footer = $('#footer'),
-                      extra = 10; // In case you want to trigger it a bit sooner than exactly at the bottom.
-
-                  footer.css({ opacity: '0', display: 'block' });
-
-                  $(window).scroll(function() {
-
-                     var scrolledLength = ( $(window).height() + extra ) + $(window).scrollTop(),
-                         documentHeight = $(document).height();
-
-
-                      // console.log( 'Scroll length: ' + scrolledLength + ' Document height: ' + documentHeight )
-
-
-                     if( scrolledLength >= documentHeight ) {
-
-                         footer
-                            .addClass('bottom')
-                            .stop().animate({ bottom: '0', opacity: '1' }, 300);
-
-                     }
-                     else if ( scrolledLength <= documentHeight && footer.hasClass('bottom') ) {
-                          footer
-                             .removeClass('bottom')
-                             .stop().animate({ bottom: '-100', opacity: '0' }, 500);
-
-                     }
-                  });
-               </script>
-               <script>
-                  $(window).resize(function(){
-                          if ($(window).width() < $('.content').width()){
-                              $('.container').css('position', 'static');
-                          }
-                          else{
-                              $('.container').css('position', 'fixed');
-                          }
-                      });
-                  
-
-               </script>   
             </body>
          </html>
