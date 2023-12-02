@@ -1414,7 +1414,8 @@ a.close-overlay.hidden {
   overflow: hidden;
   margin: 0;
   padding: 3em 0 0 0;
-  width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
   list-style: none;
   text-align: center;
 }
