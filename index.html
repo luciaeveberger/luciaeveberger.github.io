@@ -1,234 +1,117 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      
-<html class="no-js lt-ie9 lt-ie8 lt-ie7">
-   <![endif]-->
-   <!--[if IE 7]>         
-   <html class="no-js lt-ie9 lt-ie8">
-      <![endif]-->
-      <!--[if IE 8]>         
-      <html class="no-js lt-ie9">
-         <![endif]-->
-         <!--[if gt IE 8]><!--> 
-         <html class="no-js">
-            <!--<![endif]-->
-            <head>
-               <meta charset="utf-8">
-               <meta http-equiv="X-UA-Compatible" content="IE=edge">
-               <title>Lucia Eve Berger</title>
-               <meta name="description" content="user interface, McGill University, economics, computer science">
-               <meta name="viewport" content="width=device-width, initial-scale=1">
-               <head profile="http://www.luciaberger.com">
-                  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-                  <link rel="stylesheet" href="css/main.css">
-                  <link rel="stylesheet" href="css/component.css">
-                  <link rel="stylesheet" href="css/default.css">
-                  <!--JAVASCRIPT -->
+<html lang="en">
 
-                  <script type="text/javascript" script src="js/jq.js"></script>
-                  <script type="text/javascript" script src= "js/plugins.js"></script>
-                  <script src="js/modernizr.custom.js"></script>
-                  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap" rel="stylesheet">
-            <script>
-               function isMobile() { return ('ontouchstart' in document.documentElement); }
-               $(function() {
-                  let is_on_mobile = isMobile();
-                  if (is_on_mobile === false) {
-                     $('a[href*=#]:not([href=#])').click(function () {
-                        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                           var target = $(this.hash);
-                           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                           if (target.length) {
-                              $('html,body').animate({
-                                 scrollTop: target.offset().top
-                              }, 1000);
-                              return false;
-                           }
-                        }
-                     })
-                  }
-               });
-            </script>
-            </head>
-            <body>
-               <!--[if lt IE 7]>
-               <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-               <![endif]-->
-               <section class="slide">
-                  <div class = "container">
-                     <div class = "square" id="square">
-                        <div class = "text">
-                           <p> illuminating </br> your ideas </p>
-                           </hr> 
-                           <div id ="hold1">
-                              <a href="#slideh">
-                                 <button class="seemore-first">SEE MY WORK </button>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <video  id="bgvid" autoplay loop poster="img/full.jpg" muted preload="auto">
-                     <source src="vid/l.webm" type='video/webm id="bdgvid";codecs="theora, vorbis"'> </source>
-                  </video>
-               </section>
-               <section class = "slide1" id = "slide1">
-                  <div class="container">
-                     <header class="clearfix" id="slideh">
-                        <h1> <span style="color:#3b7fe0; font-size:80px;opacity:0.9"> PROJECTS </h1>
-                        </span>
-                        <hr  class="divider" style="margin-top: 30px;">
-                        </h1>
-                     </header>
-                     <div class="grid">
-                        <!-- first row -->
-                        <figure class="effect-bubba" id ="cv" href="./CV.pdf" target="_blank" style="background-color:#EEEEEE">
-                          <a href="./CV.pdf" target="_blank" style="color:#aaa">
-                           <figcaption href="./CV.pdf" target="_blank">
-                              <h2></h2>
-                              <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
-                                 <a href="./CV.pdf" target="_blank" style="color:#aaa"> CV. </a>
-                              </p>
-                           </figcaption>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="software engineer, Montreal">
+    <meta name="author" content="Lucia Eve Berger">
+
+    <title>Lucia Eve Berger, about page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="css/clean-blog.min.css" rel="stylesheet"> -->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CV.pdf">CV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/luciaberger/">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Header -->
+<header class="masthead" style="height:50px;">
+</header>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto" style="text-align: center;">
+            <img src="img/pic1.png" class="rounded img-fluid center-block" alt="DMA course objectives">
+         <!--    <h1> Lucia Eve Berger </h1> -->
+            <h6> Educational Background </h6>
+            <p> Lucia Eve Berger holds a bachelor in in Computer Science and Economics from McGill University. She was ranked first on acceptance and is a recipient of the <a href="https://erasmus-plus.ec.europa.eu/opportunities/opportunities-for-individuals/students/erasmus-mundus-joint-masters"> Erasmus Mundus Scholarship ($48,000.) </a> Her master degree was jointly awarded by TU Berlin, TU Kaiserslautern and University of Bolzano. She completed her <a href="Abstract_Master_Thesis.pdf"> thesis on Traffic Sign Recognition with Franhofer IESE. </a> </p>
+
+            <p>
+            In 2023, she finished a second masters from MILA (Quebec Artificial Intelligence Institute) and Université de Montréal while working full-time. She was awarded <a href="https://www.rbc.com/en/future-launch/scholarships/"> RBC Future launch scholarship ($3000)</a>.  She completed an 8-month project with Microsoft on <a href="DESS_Final_Report.pdf"> Minimum Word Error Rate Training.<a href="https://scholar.google.com/citations?user=md4B51YAAAAJ&hl=en"> Publications. </a>
+
+            <h6> Professional Background </h6>
+
+            From 2015 to 2017, she participated in the <a href="https://jobs.gecareers.com/global/en/leadership-eedp-page"> Edison Engineering Rotational Programme at General Electric (2 years) </a>. She has worked two years at the German Institute for Artificial Intelligence (DFKI) and Siemens. For the past four years, she has been employed as a Research Scientist at Microsoft, in the Applied Artificial Intelligence division. <p>
+
+            <h6> Interests </h6>
+            <p> 
+            She has lived in the USA (Lexington), Canada (Montreal), Mexico (Guadalajara), Italy (Bolzano) and Germany (Berlin). She speaks English, French, Spanish and German at a professional level. She studies Italian and Japanese for fun! She enjoys the outdoors, including hiking, skiing and backpacking.</p>
+
+             <a href="https://www.linkedin.com/in/luciaberger/"> Contact her </a></p>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/luciaberger/">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
                         </a>
-                        </figure>
-                        <figure class="effect-bubba">
-                           <a href="./pages/masters.html">
-                           <img src="img/front/masters.png" alt="masters"/> 
-                           <figcaption>
-                              <h2></h2>
-                                 <p  style="color:blue"> 
-                                    <a href="./pages/masters.html" style="color:#3b7fe0"> EUROPEAN MASTER IN SOFTWARE ENGINEERING </a> </br>
-                                 <a href="./pages/masters.html">
-                                 <button class="seemore">MASTER </button></a>
-                              </p>
-                           </figcaption>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/luciaeveberger">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
                         </a>
-                        </figure>
-                        <figure class="effect-bubba">
-                           <a href="./pages/dma.html">
-                           <img src="img/front/ge_2.jpg" alt="ge"/> </a>
-                           <figcaption>
-                              <h2></h2>
-                              <p> <a href="./pages/dma.html" style="color:#3b7fe0"> PYTHON CURRICULUM DEVELOPMENT </a></br>
-                                 <a href="./pages/dma.html">
-                                 <button class="seemore">AI </button></a>
-                              </p>
-                           </figcaption>
-                        </figure>
-                        <!-- second row -->
-                        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
-                            <a href="./pages/about.html">
-                           <figcaption>
-                              <h2></h2>
-                              <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
-                                 <a href="./pages/about.html" style="color:#aaa"> ABOUT </a>
-                              </p>
-                           </figcaption>
-                        </a>
-                        </figure>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                        <figure class="effect-bubba">
-                           <a href="/savr">
-                              <img src="img/front/im3.jpg" alt="savr"/> </a>
-                           <figcaption>
-                              <h2></h2>
-                              <p> <a href="./pages/open_data_visualization.html" style="color:#3b7fe0"> OPEN DATA VISUALIZATION </a> </br>
-                                 <a href="./pages/open_data_visualization.html">
-                                    <button class="seemore"> WEB DEV </button></a>
-                              </p>
-                           </figcaption>
-                        </figure>
-                        <figure class="effect-bubba">
-                           <a href="/savr">
-                              <img src="img/front/savr3.png" alt="savr"/> </a>
-                           <figcaption>
-                              <h2></h2>
-                              <p> <a href="./pages/saver_opener.html" style="color:#3b7fe0"> APEX STARTUP COMPETITION </a></br>
-                                 <a href="./pages/saver_opener.html">
-                                    <button class="seemore"> WEB DEV </button></a>
-                              </p>
-                           </figcaption>
-                        </figure>
-<!--                        <figure class="effect-bubba">-->
-<!--                           <a href="/cansat"> <img src="img/front/im1.jpg" alt="img06"/> </a>-->
-<!--                           <figcaption>-->
-<!--                              <h2></h2>-->
-<!--                              <p> APEX STATUP COMPETITION </br>-->
-<!--                                 <a href="./pages/saver_opener.html">-->
-<!--                                 <button class="seemore"> SAVR WEB DEV  </button></a>-->
-<!--                              </p>-->
-<!--                           </figcaption>-->
-<!--                        </figure>-->
+<!-- Custom scripts for this template -->
+<script src="../js/clean-blog.min.js"></script>
+</body>
 
-<!--                        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">-->
-<!--                           <figcaption>-->
-<!--                              <h2></h2>-->
-<!--                              <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">-->
-<!--                                 <a href="./pages/about.html" style="color:#aaa"> ABOUT </a>-->
-<!--                              </p>-->
-<!--                           </figcaption>-->
-<!--                        </figure>-->
-                        <!-- third row -->
-                        <figure class="effect-bubba" id ="cv" style="background-color:#EEEEEE;">
-                           <figcaption>
-                              <h2></h2>
-                              <p id = "about" style="line-height:2em;opacity:0.8;color:#aaa;font-size:80px">
-                                 <a href="mailto:lucia.berger@mail.mcgill.ca" target="_blank" style="color:#aaa"> CONTACT </a>
-                              </p>
-                           </figcaption>
-                        </figure>
-                        <figure class="effect-bubba">
-                           <a href="./pages/cansat.html">
-                              <img src="img/front/cansat.PNG" alt="masters"/> </a>
-                           <figcaption>
-                              <h2></h2>
-                              <p> <a href="./pages/cansat.html" style="color:#3b7fe0" target="_blank"> CANSAT </a></br>
-                                 <a href="./pages/cansat.html">
-                                    <button class="seemore">ENGINEERING PROJECT </button></a>
-                              </p>
-                           </figcaption>
-                        </figure>
-                        <figure class="effect-bubba">
-                           <a href="./pages/teaching.html">
-                              <img src="img/front/teaching_1.png" alt="teaching"/> </a>
-                           <figcaption>
-                              <h2></h2>
-                              <p>  <a href="./pages/teaching.html" style="color:#3b7fe0"> TEACHING </a></br>
-                                 <a href="./pages/teaching.html">
-                                    <button class="seemore"> TEACHING </button></a>
-                              </p>
-                           </figcaption>
-                        </figure>
-
-                     </div>
-                  </div>
-
-               </section>
-               <script>
-                  //DOM loaded 
-                  $(document).ready(function(){
-                  $("button").click(function(){
-                  $('#change ').css('color','black');
-                  });
-                  });
-               </script>
-               <script>
-                  $('.img_class').on( "mouseover", function() {
-                  $('#hidden_div').show();
-                   
-                  });
-               </script>
-               <script> 
-                  $(function(){
-                      $("#two").hover(function(){
-                        $(this).find(".showMore").fadeIn();
-                      }
-                                      ,function(){
-                                          $(this).find(".showMore").fadeOut();
-                                      }
-                                     );        
-                  });
-                  
-               </script>
-            </body>
-         </html>
+</html>
